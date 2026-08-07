@@ -1,0 +1,11 @@
+# 密钥与本地配置（绝不要提交）
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 系统
+Thumbs.db
+.DS_Store

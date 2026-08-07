@@ -1,0 +1,4 @@
+interface:
+  display_name: "智谱识图"
+  short_description: "用智谱免费视觉模型分析图片/URL并返回详细文字描述"
+  default_prompt: "Use $zhipu-vision to analyze the image at <image path or URL>"
