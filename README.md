@@ -8,7 +8,9 @@
 
 **第一步：把工具放进 Codex**
 
-下载或克隆这个仓库，把里面的 `zhipu-vision` 文件夹，整个复制到：
+省事版：把仓库链接 **https://github.com/Zhangmu-XL/zhipu-vision** 直接发给你的 AI（比如 Codex），跟它说"帮我安装这个 skill"，它会自己下载并放好，你什么都不用做。
+
+手动版：下载或克隆这个仓库，把里面的 `zhipu-vision` 文件夹，整个复制到：
 
 ```
 C:\Users\你的用户名\.codex\skills\
@@ -29,6 +31,25 @@ C:\Users\你的用户名\.codex\skills\
 > 帮我看一下 `D:\照片.jpg`
 
 完事。压缩图片、读 RAW、认字，这些工具自己会处理，你不用管。
+
+## 仓库里都有什么？
+
+新手只需要碰两个文件：
+
+- `scripts\analyze_image.cmd` —— 看图就靠它（Windows 入口）
+- `scripts\setup.cmd` —— 填 Key 就靠它
+
+其他基本不用管：
+
+- `SKILL.md` —— 给 Codex 看的说明书，你不用打开
+- `scripts\analyze_image.py` —— 核心代码本体，别碰
+- `scripts\setup.py` —— Mac / Linux 版填 Key 用的
+- `scripts\mcp_server.py` —— 接 Claude、Cursor 等其他 AI 用的，不接就不用管
+- `references\usage.md` —— 详细说明书（参数、报错处理），遇到问题再翻
+- `agents\openai.yaml` —— Codex 界面里显示的名字和简介
+- `.env.example`、`.gitignore`、`requirements-mcp.txt` —— 配置和保护用的，不用管
+
+仓库最外面还有 `README.md`（你正在看的教程）和 `LICENSE`（开源声明），也不用管。
 
 ## Key 从哪来？
 
